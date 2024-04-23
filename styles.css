@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #008ecf; /* Blue color, you can adjust as needed */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Medicine grid styles */
+  .medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .medicine-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .medicine-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .medicine-item h3 {
+    margin-top: 0;
+  }
+
+  .bigslideshow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .slideshow {
+    overflow: hidden;
+    height: 400px;
+    width: 45%;
+    margin-left: 3%;
+  }
+  .slideshow figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slideshow infinite;
+  }
+  .slideshow figure img {
+    float: left;
+    width: 20%;
+    height: 450px;
+  }
+  @keyframes slideshow {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+  .testimonials {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    margin: 0 10px;
+    flex: 1 1 250px; /* Adjust width as needed */
+    max-width: 300px; /* Adjust max width as needed */
+  }
+  
+  .image-placeholder img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto 20px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    font-weight: bold;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer navigation styles */
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  footer ul li:last-child {
+    margin-right: 0;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .socialicons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .socialicons a {
+    background-color: #5b5b65;
+    color:aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  .socialicons a i {
+    font-size: 2em;
+    opacity: 0.9;
+  }
+  .socialicons .youtube:hover {
+    background-color: #990803;
+    transition: 0.5s;
+  }
+  .socialicons .facebook:hover {
+    background-color: #020970;
+    transition: 0.5s;
+  }
+  .socialicons .twitter:hover {
+    background-color: #2b5eec;
+    transition: 0.5s;
+  }
+  .socialicons .instagram:hover {
+    transition: 0.5s;
+    background: linear-gradient(
+      rgb(144, 41, 228),
+      rgb(204, 25, 145),
+      rgb(202, 38, 38),
+      rgb(235, 128, 40),
+      rgb(241, 189, 46)
+    );
+  }
+  .socialicons .google-plus:hover {
+    transition: 0.5s;
+    background: linear-gradient(
+      rgb(245, 207, 39),
+      rgb(233, 116, 20),
+      rgb(233, 28, 28),
+      rgb(47, 219, 32),
+      rgb(25, 109, 204)
+    );
+  }
+  button a{
+    text-decoration: none;
+  }
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .medicine-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
