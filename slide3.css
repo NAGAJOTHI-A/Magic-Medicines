@@ -57,9 +57,26 @@ body {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #d8a822;
 }
 
 button a{
   text-decoration: none;
+}
+button a{
+  text-decoration: none;
+  color: aliceblue;
+}
+button{
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #d8a822;
+  font-weight: 10px;
+  border: none;
+}
+button a:hover{
+  color: #000000;
 }
